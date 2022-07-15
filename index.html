@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tripadvisor</title>
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/fa6ec3df67.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="hide-humberger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div>
+          <img src="./assets/img/Tripadvisor_logo.svg" alt="" class="logo" />
+          <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass search-loop"></i>
+            <input type="text" icon="" />
+          </div>
+        </div>
+        <nav>
+          <i class="fa-solid fa-pen"></i> <a href="#" class="link-to-hide"> Avis</a> <i class="fa-regular fa-heart"></i>
+          <a href="#" class="link-to-hide"> Voyages</a> <i class="fa-regular fa-bell"></i> <a href="#" class="link-to-hide"> Alertes</a>
+          <button id="login">Connectez-vous</button>
+        </nav>
+
+        <div class="hide-loop">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div>
+        <h1><span>Explorez</span> Paris</h1>
+      </div>
+
+      <!------------- main nav ------------>
+
+      <nav class="main-nav">
+        <div>
+          <p>Hôtels</p>
+          <i class="fa-solid fa-bed"></i>
+        </div>
+
+        <div>
+          <p>Locations de vacances</p>
+          <i class="fa-solid fa-house-lock"></i>
+        </div>
+
+        <div>
+          <p>Activités</p>
+          <i class="fa-solid fa-bed"></i>
+        </div>
+
+        <div>
+          <p>Restaurants</p>
+          <i class="fa-solid fa-utensils"></i>
+        </div>
+
+        <div>
+          <p>Forums de voyage</p>
+          <i class="fa-regular fa-message"></i>
+        </div>
+
+        <div>
+          <p>Plus</p>
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+
+        <div class="div-to-hide">
+          <p>Plus</p>
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+
+        <div class="div-to-hide">
+          <p>Plus</p>
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+      </nav>
+
+      <!-------------- End main nav -------------->
+
+      <!-- --------------------------- section home -------------------------->
+      <section>
+        <!------------------ Album photos -------------------------->
+        <div class="album-photos">
+          <div class="col-1">
+            <img class="main-img" src="./assets/img/caption1.jpg" alt="" />
+          </div>
+
+          <div class="col-2">
+            <div>
+              <img src="./assets/img/caption2.jpg" alt="" />
+            </div>
+
+            <div>
+              <img src="./assets/img/caption3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!----------------- litle nav after photos -------------------------------->
+      <section>
+        <div class="litle-nav">
+          <div><a href="#">Europe </a> > <a href="#"> France </a> > <a href="#"> Île-de-france </a> > <a href="#"> Paris </a></div>
+          <p>Visiter : paris</p>
+        </div>
+
+        <div class="city-presentation">
+          <h3>La Ville Lumière éblouit en tous points</h3>
+          <p>
+            Aucun autre endroit au monde ne fait autant rêver que Paris. La ville séduit par son art, son architecture, sa culture et sa cuisine, mais il y a
+            aussi des merveilles plus discrètes qui n’attendent qu’à être explorées : les ruelles pavées pittoresques, les pâtisseries au coin de la rue et les
+            petits bistrots douillets qui vous invitent à boire un verre de beaujolais. Préparez-vous à vous approprier Paris.
+          </p>
+        </div>
+      </section>
+
+      <!-- --------------------------- End section home -------------------------->
+
+      <!-- --------------------------- section cards ------------------------------ -->
+
+      <section>
+        <h3>Paris : les immanquables</h3>
+
+        <div class="cards">
+          <div class="card">
+            <h4>Se reposer</h4>
+            <p>Un mélange de charme, de symboles et de modernité.</p>
+            <a class="display-all" href="#">Tout afficher</a>
+          </div>
+
+          <!-- ---- first carousel ------ -->
+          <section class="carousel">
+            <div class="card">
+              <div>
+                <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="award-logo">
+                  <img src="./assets/img/TC_LL.svg" alt="" />
+                </div>
+              </div>
+              <a href="#">Effel Tower</a>
+
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Tours et plateformes d'observation, Monuments & Points d'intérêt</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/cour-napoleon-et-pyramide.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="award-logo">
+                  <img src="./assets/img/TC_LL.svg" alt="" />
+                </div>
+              </div>
+              <a href="#">Musée du Louvre</a>
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Bâtiments architecturaux, Musées d'art</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/arc-de-triomphe-at-night.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="award-logo">
+                  <img src="./assets/img/TC_LL.svg" alt="" />
+                </div>
+              </div>
+              <a href="#">Arc de Triomphe</a>
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Bâtiments architecturaux, Sites historiques</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="award-logo">
+                  <img src="./assets/img/TC_LL.svg" alt="" />
+                </div>
+              </div>
+              <a href="#">Effel Tower</a>
+
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Tours et plateformes d'observation, Monuments & Points d'intérêt</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/cour-napoleon-et-pyramide.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="award-logo">
+                  <img src="./assets/img/TC_LL.svg" alt="" />
+                </div>
+              </div>
+              <a href="#">Musée du Louvre</a>
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Bâtiments architecturaux, Musées d'art</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/arc-de-triomphe-at-night.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="award-logo">
+                  <img src="./assets/img/TC_LL.svg" alt="" />
+                </div>
+              </div>
+              <a href="#">Arc de Triomphe</a>
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Bâtiments architecturaux, Sites historiques</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="award-logo">
+                  <img src="./assets/img/TC_LL.svg" alt="" />
+                </div>
+              </div>
+              <a href="#">Effel Tower</a>
+
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Tours et plateformes d'observation, Monuments & Points d'intérêt</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/cour-napoleon-et-pyramide.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <a href="#">Musée du Louvre</a>
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Bâtiments architecturaux, Musées d'art</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/arc-de-triomphe-at-night.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <a href="#">Arc de Triomphe</a>
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Bâtiments architecturaux, Sites historiques</p>
+            </div>
+          </section>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <h4>Se reposer</h4>
+            <p>Un mélange de charme, de symboles et de modernité.</p>
+            <a class="display-all" href="#">Tout afficher</a>
+          </div>
+
+          <!-- ---- second carousel ------ -->
+
+          <section class="carousel">
+            <div class="card">
+              <div>
+                <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="award-logo">
+                  <img src="./assets/img/TC_LL.svg" alt="" />
+                </div>
+              </div>
+              <a href="#">Effel Tower</a>
+
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Tours et plateformes d'observation, Monuments & Points d'intérêt</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/cour-napoleon-et-pyramide.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="award-logo">
+                  <img src="./assets/img/TC_LL.svg" alt="" />
+                </div>
+              </div>
+              <a href="#">Musée du Louvre</a>
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Bâtiments architecturaux, Musées d'art</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/arc-de-triomphe-at-night.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="award-logo">
+                  <img src="./assets/img/TC_LL.svg" alt="" />
+                </div>
+              </div>
+              <a href="#">Arc de Triomphe</a>
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Bâtiments architecturaux, Sites historiques</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="award-logo">
+                  <img src="./assets/img/TC_LL.svg" alt="" />
+                </div>
+              </div>
+              <a href="#">Effel Tower</a>
+
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Tours et plateformes d'observation, Monuments & Points d'intérêt</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/cour-napoleon-et-pyramide.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="award-logo">
+                  <img src="./assets/img/TC_LL.svg" alt="" />
+                </div>
+              </div>
+              <a href="#">Musée du Louvre</a>
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Bâtiments architecturaux, Musées d'art</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/arc-de-triomphe-at-night.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="award-logo">
+                  <img src="./assets/img/TC_LL.svg" alt="" />
+                </div>
+              </div>
+              <a href="#">Arc de Triomphe</a>
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Bâtiments architecturaux, Sites historiques</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="award-logo">
+                  <img src="./assets/img/TC_LL.svg" alt="" />
+                </div>
+              </div>
+              <a href="#">Effel Tower</a>
+
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Tours et plateformes d'observation, Monuments & Points d'intérêt</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/cour-napoleon-et-pyramide.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <a href="#">Musée du Louvre</a>
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Bâtiments architecturaux, Musées d'art</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/arc-de-triomphe-at-night.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <a href="#">Arc de Triomphe</a>
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Bâtiments architecturaux, Sites historiques</p>
+            </div>
+          </section>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <h4>Se restaurer</h4>
+            <p>Bistrots et bars typiques, et plus encore à Paris.</p>
+            <a class="display-all" href="#">Tout afficher</a>
+          </div>
+
+          <!-- ---- third carousel ------ -->
+
+          <section class="carousel">
+            <div class="card">
+              <div>
+                <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="award-logo">
+                  <img src="./assets/img/TC_LL.svg" alt="" />
+                </div>
+              </div>
+              <a href="#">Effel Tower</a>
+
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Tours et plateformes d'observation, Monuments & Points d'intérêt</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/cour-napoleon-et-pyramide.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="award-logo">
+                  <img src="./assets/img/TC_LL.svg" alt="" />
+                </div>
+              </div>
+              <a href="#">Musée du Louvre</a>
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Bâtiments architecturaux, Musées d'art</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/arc-de-triomphe-at-night.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="award-logo">
+                  <img src="./assets/img/TC_LL.svg" alt="" />
+                </div>
+              </div>
+              <a href="#">Arc de Triomphe</a>
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Bâtiments architecturaux, Sites historiques</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="award-logo">
+                  <img src="./assets/img/TC_LL.svg" alt="" />
+                </div>
+              </div>
+              <a href="#">Effel Tower</a>
+
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Tours et plateformes d'observation, Monuments & Points d'intérêt</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/cour-napoleon-et-pyramide.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="award-logo">
+                  <img src="./assets/img/TC_LL.svg" alt="" />
+                </div>
+              </div>
+              <a href="#">Musée du Louvre</a>
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Bâtiments architecturaux, Musées d'art</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/arc-de-triomphe-at-night.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="award-logo">
+                  <img src="./assets/img/TC_LL.svg" alt="" />
+                </div>
+              </div>
+              <a href="#">Arc de Triomphe</a>
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Bâtiments architecturaux, Sites historiques</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="award-logo">
+                  <img src="./assets/img/TC_LL.svg" alt="" />
+                </div>
+              </div>
+              <a href="#">Effel Tower</a>
+
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Tours et plateformes d'observation, Monuments & Points d'intérêt</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/cour-napoleon-et-pyramide.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <a href="#">Musée du Louvre</a>
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Bâtiments architecturaux, Musées d'art</p>
+            </div>
+
+            <div class="card">
+              <div>
+                <img src="./assets/img/arc-de-triomphe-at-night.jpg" alt="" />
+                <div class="like-logo">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <a href="#">Arc de Triomphe</a>
+              <div class="ranking">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Bâtiments architecturaux, Sites historiques</p>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="container">
+        <div class="logo-footer">
+          <img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt="" />
+        </div>
+        <div class="link-footer">
+          <p>© 2022 TripAdvisor LLC Tous droits réservés.</p>
+
+          <a href="#">Conditions d'utilisation</a>
+          <a href="#">Confidentialité et utilisation des cookies</a>
+          <a href="#">Accord d'utilisation des cookies</a>
+          <a href="#">Plan du site</a>
+          <a href="#">Fonctionnement du site</a>
+        </div>
+        <div class="currancy">
+          <div><span>€ EUR</span></div>
+          <div><span>France</span></div>
+        </div>
+      </section>
+
+      <section class="container">
+        <p>
+          Cette version de notre site internet s'adresse aux personnes parlant français en France. Si vous habitez un autre pays ou une autre région, merci de
+          choisir la version de Tripadvisor appropriée pour votre pays ou région dans le menu déroulant. plus
+        </p>
+      </section>
+    </footer>
+
+    <div class="modal hidden">
+      <div class="form-container">
+        <i class="fa-solid fa-xmark" id="icon-times"></i>
+        <div>
+          <p>Formulaire de contact</p>
+
+          <form id="contactForm">
+            <input type="text" name="firstname" id="firstname" placeholder="Prénom" autocomplete="off" />
+            <input type="text" name="lastname" id="lastname" placeholder="Nom" />
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <input type="text" name="subject" id="subject" placeholder="Objet" />
+            <textarea name="description" id="description" rows="5" cols="50" placeholder="Écrivez ici votre message..."></textarea>
+            <input type="submit" value="Envoyer le formulaire" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/form.js"></script>
+  </body>
+</html>
